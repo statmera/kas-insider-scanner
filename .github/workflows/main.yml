@@ -2,7 +2,8 @@ name: KAS Telegram Test
 
 on:
   workflow_dispatch:
-
+  schedule:
+    - cron: "0 5 * * *"
 jobs:
   run:
     runs-on: ubuntu-latest
